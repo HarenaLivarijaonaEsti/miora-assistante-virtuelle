@@ -1,0 +1,252 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  margin: 0;
+  background-color: #F6F2E9; /* beige clair */
+  line-height: 1.6;
+}
+
+/* Section Identité */
+.identity-section {
+  background: linear-gradient(135deg, #F6F2E9, #FFFFFF);
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6BA8A9; /* bleu doux */
+}
+
+.identity-section h1 {
+  font-size: 2rem;
+  color: #6BA8A9;
+  margin-bottom: 0;
+}
+
+.identity-section h2 {
+  font-weight: 400;
+  color: #46707A;
+  margin-top: 5px;
+}
+
+.identity-section .location,
+.identity-section .availability {
+  color: #666;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #6BA8A9;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  margin-top: 20px;
+  font-style: italic;
+  color: #46707A;
+}
+
+.tarif {
+  margin-top: 30px;
+  background-color: #C8D5B9; /* vert sauge clair */
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #2f4738;
+}
+
+/* SECTION TARIF */
+.tarif-section {
+  background-color: #f9f9ff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarif-card {
+  background-color: #fff;
+  max-width: 600px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarif-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tarif-card h3 {
+  font-size: 1.8em;
+  color: #4a47a3;
+  margin-bottom: 15px;
+}
+
+.tarif-intro {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tarif-desc {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #6c63ff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #5848d2;
+  transform: scale(1.03);
+}
+
+
+/* Offre */
+.offer-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.offer-section h2 {
+  color: #6BA8A9;
+}
+
+.offer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.offer-section li {
+  background: #F6F2E9;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+/* Bouton principal */
+.btn-primary {
+  background: #6BA8A9;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #46707A;
+}
+
+/* Bouton secondaire */
+.btn-secondary {
+  border: 2px solid #6BA8A9;
+  color: #6BA8A9;
+}
+
+.btn-secondary:hover {
+  background: #6BA8A9;
+  color: white;
+}
+
+/* Services */
+.services-section {
+  background-color: #C8D5B9; /* vert sauge clair */
+  padding: 60px 30px;
+}
+
+.services-section h2 {
+  text-align: center;
+  color: #46707A;
+  margin-bottom: 30px;
+}
+
+.services-section ol {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #2f4738;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #46707A; /* bleu profond */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer-section a {
+  color: #C8D5B9;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .quote {
+  margin-top: 20px;
+  font-style: italic;
+  color: #E5EFE4;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .profile {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .info {
+    max-width: 500px;
+  }
+
+  .profile-photo {
+    margin-right: 30px;
+  }
+}
